@@ -1,11 +1,13 @@
 [tool.poetry]
 name = "taggerscript"
-version = "0.0.3"
+version = "0.0.6"
 description = "Scripting language written in Python for Discord bot"
 authors = ["najis"]
 license = "GNU"
 readme = "README.md"
-include = ["visitor","core","library","parser"]
+packages = [
+	{ include = "taggerscript" }
+]
 
 [tool.poetry.dependencies]
 python = "^3.11"
