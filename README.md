@@ -7,11 +7,28 @@ Tagger is a scripting language for Discord bot. It can be used from tag command 
 ```tagger
 {do
     {msg.set("React with :heart: to claim this present")}
-    {msg.wait_for("reaction", ":heart:")}
+    {msg.wait_for_reaction(":heart:")}
     {msg.set("Just kidding there is no present")}
 }
 ```
 Check example for more
+
+# Install
+
+## PIP
+```
+pip install taggerscript
+```
+
+## Poetry
+```
+poetry add taggerscript
+```
+
+## git clone
+```
+git clone https://github.com/najis-poop/TaggerScript
+```
 
 # Documentation
 
