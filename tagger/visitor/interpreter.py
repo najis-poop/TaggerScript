@@ -1,4 +1,4 @@
-from core.node import Node
+from tagger.core.node import Node
 from .tag_builtin import *
 from .obj_builtin import *
 from . import executor # DO NOT REMOVE. this module initialize all Node execute method 

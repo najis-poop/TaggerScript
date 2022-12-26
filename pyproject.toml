@@ -1,12 +1,12 @@
 [tool.poetry]
 name = "taggerscript"
-version = "0.0.6"
+version = "0.0.9"
 description = "Scripting language written in Python for Discord bot"
 authors = ["najis"]
 license = "GNU"
 readme = "README.md"
 packages = [
-	{ include = "taggerscript" }
+	{ include = "tagger" }
 ]
 
 [tool.poetry.dependencies]

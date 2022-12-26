@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-from visitor.obj_builtin import *
+from tagger.visitor.obj_builtin import *
 
 class UserBase(TagBase):
     NAME = 'User'
@@ -37,15 +37,15 @@ class ContextTagBase(TagBase):
 
 class ContextTag(TagInstance):
     
-    def __init__(self, bot: commands.Bot, ctx: commands.Context) -> None:
+    def __init__(self, bot: commands.Bot, message: discord.Message, ctx: commands.Context) -> None:
         super().__init__()
-        self.msg = ctx.message
+        self.msg = message
         self.bot = bot
         self.ctx = ctx
         self.set_type(messagetag)
         
         self.field['user'] = User(self.ctx.message.author)
-        self.field['message'] = Message(ctx.message)
+        self.field['message'] = Message(message)
         
         add_Amethod(self, 'set', _ctx_set)
         add_Amethod(self, 'add', _ctx_add)

@@ -1,5 +1,5 @@
-from core.node import *
-from core.klass import TagInstance, Enviroment
+from tagger.core.node import *
+from tagger.core.klass import TagInstance, Enviroment
 from .tag_builtin import *
 
 import typing

@@ -1,5 +1,5 @@
 import asyncio
-from core.klass import *
+from tagger.core.klass import *
 import typing
 
 class TagBase(TagClass):

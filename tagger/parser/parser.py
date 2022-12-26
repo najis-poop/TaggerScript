@@ -1,7 +1,7 @@
 from lark import Lark, Transformer, Token, Tree
 from lark.exceptions import UnexpectedCharacters, UnexpectedEOF, UnexpectedToken
-from core.node import *
-from core.error import Error
+from tagger.core.node import *
+from tagger.core.error import Error
 
 tparser = Lark(open('parser/tagger.lark'))
 

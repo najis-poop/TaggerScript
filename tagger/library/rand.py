@@ -1,6 +1,6 @@
 import random
 
-from visitor.obj_builtin import  *
+from tagger.visitor.obj_builtin import  *
 
 def randint(args: TagArg, kargs: Kargs, env: Enviroment):
     success, er = expect('randint', [TagBaseInt, TagBaseInt], {}, args, kargs)
