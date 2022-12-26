@@ -3,7 +3,7 @@ from lark.exceptions import UnexpectedCharacters, UnexpectedEOF, UnexpectedToken
 from tagger.core.node import *
 from tagger.core.error import Error
 
-tparser = Lark(open('parser/tagger.lark'))
+tparser = Lark(open('tagger/parser/tagger.lark'))
 
 def tparse(text: str):
     try:
