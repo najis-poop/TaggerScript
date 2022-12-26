@@ -4,3 +4,4 @@ core/__pycache__
 parser/__pycache__
 visitor/__pycache__
 poetry.lock
+dist
